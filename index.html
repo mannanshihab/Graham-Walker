@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Home, initial-scale=1.0">
+    <link rel="font-awesome 5.5 stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');">
+
+    <link rel="bootstrap4.6 stylesheet" href="css/bootstrap.min.css">
+    <title> Graham Walker</title>
+    <style>
+        :root{
+        --yellow: rgb(199, 10, 10);
+        }
+
+        *::selection{
+            background: var(--yellow);
+            color: #333;
+        }
+        html::-webkit-scrollbar{
+            width: 10px;
+        }
+        
+        html::-webkit-scrollbar-thumb{
+            background: var(--yellow);
+        }
+        
+        
+        #profile{
+            position: fixed;
+            top: 1;
+            left: 6rem;
+            transition: 1s;
+            height: 120%;
+            padding-top: 5rem;
+        }
+        #main_content{
+            position: relative;
+            top:0;
+            left: 20.4rem;
+        }
+        
+        #Contact .card{
+            transition: 1s;
+        }
+        #Contact .card:hover{
+            padding: 10px;
+            background: var(--yellow);
+            color: #FFF;
+            transform: translate(90deg);
+        } 
+        
+        #Work .card{
+            width: 100%;
+            transition: 2s;
+        }
+        #Work .card:hover{
+            background: var(--yellow);
+            color: #FFF;
+            width: 110%;
+        }
+        
+        .nav  a{
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+        } 
+        .nav div{
+            width: 100%;
+            transition: 1s;
+        }
+        .nav div:hover{
+            background: var(--yellow);
+            color: #FFF;
+            /* transform: scale(1); */
+        }
+        
+        
+        @media (min-width: 276px) and (max-width: 768px){
+            
+            #profile{
+                position: relative;
+                top: 0rem;
+                left: 0;
+                transition: 1s;
+                height: 50%;
+            }
+            #main_content{
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+            #mobile-menu{
+                position: fixed;
+                top: 0rem;
+                left: 0;
+                z-index: 1;
+            }
+            
+        }
+        @media (min-width: 769px) and (max-width: 1176px){
+            #profile{
+            position: fixed;
+            top: 1;
+            left: 6rem;
+            transition: 1s;
+            height: 120%;
+            }
+            #main_content{
+                position: relative;
+                top:0;
+                left: 12.4rem;
+            }
+        }
+        @media(min-width: 1400px) and (max-width: 1700px){
+            #main_content{
+            position: relative;
+            top:0;
+            left:4rem;
+            }
+        }
+        @media(min-width: 1701px) and (max-width: 2200px){  
+            
+            #main_content{
+            position: relative;
+            top:0;
+            left:0rem;
+            }
+        }
+        
+    </style>
+</head>
+<body class="bg-dark">
+    <section id="Portfolio_Two" class="mx-auto shadow mb-5">
+        <div class="container">
+            <div class="row">
+                <!-- side bar -->
+                <div id="profile" class="col-md-3 bg-light rounded-left rounded-3">
+                    <aside>
+                        <!-- profile -->
+                        <div class="card mx-auto bg-light mt-5 border-0" style="width: 15rem;">
+                            <img src="img/author.png" class="card-img-top w-50 mx-auto" alt="profile img">
+                            <div class="card-body mx-auto text-center">
+                            <p class="card-text h4 text-dark">Graham Walker</p>
+                            <li class="text-danger">App Developer</li>
+                            </div>
+                        </div>
+                        <!-- side nav -->
+                        <div class="nav row rounded-3 d-none d-md-block text-uppercase text-center">
+                            <div class="menu w-100 border border-left-0 border-right-0 p-2">
+                                <a href="#Home" class="pl-3">Home</a>
+                            </div>
+                            <div class="w-100  p-2">
+                                <a href="#Resume" class="pl-3">Resume</a>
+                            </div>
+                            <div class="w-100 border border-left-0 border-right-0 border-bottom-0 p-2">
+                                <a href="#Work" class="pl-3">Work</a>
+                            </div>
+                            <div class="w-100 border border-left-0 border-right-0 border-bottom-0 p-2">
+                                <a href="#about" class="pl-3">Stories</a>
+                            </div>
+                            <div class="w-100 border border-left-0 border-right-0 p-2">
+                                <a href="#Contact" class="pl-3">Contact</a>
+                            </div>
+                        </div>
+                        <!--/End side nav -->
+                    </aside>
+                </div><!--/ side bar -->
+
+                <!-- main content -->
+                <div id="main_content" class="col-md-9 bg-white">
+                    <main>
+                         <!-- mobile-menu -->
+                         <div id="mobile-menu" class="container d-lg-none d-md-none">
+                            <div class="row shadow bg-dark">
+                                <div class="col-12 d-flex justify-content-around my-2">
+                                    <div>
+                                        <a href="#Home" class="btn btn-sm btn-danger"><i class="fa fa-home"></i></a>
+                                    </div>
+                                    <div>
+                                        <a href="#Resume" class="btn btn-sm btn-danger"><i class="fa fa-file"></i></a>
+                                    </div>
+                                    <div>
+                                        <a href="#Work" class="btn btn-sm btn-danger"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    <div>
+                                        <a href="#Contact" class="btn btn-sm btn-danger"><i class="fa fa-address-card"></i></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- About -->
+                        <div id="Home" class="row mt-2">
+                            <div class="col-11 col-md-8 mt-5 ml-3 d-flex justify-content-center">
+                                <div class="row">
+                                    <h5 class="text-uppercase">HELLO And Welcome</h5>
+                                    <p class="text-justify text-muted mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, aliquid. Cupiditate maxime repellat, alias excepturi placeat veritatis ducimus in fugit neque, dolores sit esse similique est mollitia consequuntur, sapiente commodi!</p>
+                                </div>
+                            </div>
+                            <div class="col-3 col-md-3 mt-5 ml-5 mb-0 text-center d-none d-md-block">
+                                <div class="rounded-lg bg-info p-2  mt-5">
+                                    <object class="mt-5 text-uppercase">
+                                        <a href="#" class="text-white mt-5">Download CV</a>
+                                    </object>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- skill -->
+                        <div class="row mt-5">
+                            <div class="col-md-5">
+                                <h3 class="text-left text-uppercase text-info mt-3 mb-5">Skill</h3>
+                                <div class="card bg-light p-2 mt-2 mb-2">
+                                    <div class="bg-white p-2">
+                                        <dt>Wordpress</dt>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Wordpress 70%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bg-light p-2 mt-2 mb-2">
+                                    <div class="bg-white p-2">
+                                        <dt>Photoshop</dt>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bg-light p-2 mt-2 mb-2">
+                                    <div class="bg-white p-2">
+                                        <dt>HTML5</dt>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> 90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h2 class="text-left text-info mt-3 mb-5">EXPERTISE</h2>
+                                <div class="row d-flex justify-content-between">
+                                    <div class="col-md-6">
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            install and configure
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            install and configure
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            install and configure
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            install and configure
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            install and configure
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            web usability
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            audio video editing
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            web usability
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            web usability
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-check-square text-danger mx-2" aria-hidden="true"></i>
+                                            web usability
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/End About -->
+
+                        <!-- work -->
+                        <div id="Work" class="row mt-5 mb-5">
+                            <div class="col-md-4 mt-2 mb-2">
+                                <div class="card w-100 h-100">
+                                    <i class="fa fa-laptop fa-3x mx-auto mt-5 mb-3"></i>
+                                    <div class="card-body text-center">
+                                        <p class="card-text ">Design Concept</p>
+                                        <p class="">Awesome designs for your company</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2 mb-2">
+                                <div class="card w-100 h-100">
+                                    <i class="fa fa-mobile fa-3x mx-auto mt-5 mb-3"></i>
+                                    <div class="card-body text-center">
+                                    <p class="card-text ">App Development</p>
+                                    <p class="">Awesome designs for your company</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2 mb-2">
+                                <div class="card w-100 h-100">
+                                    <i class="fa fa-globe fa-3x mx-auto mt-5 mb-3"></i>
+                                    <div class="card-body text-center">
+                                    <p class="card-text ">Marketing</p>
+                                    <p class="">Awesome designs for your company</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/End work -->
+
+                        <!-- resume -->
+                        <div id="Resume" class="row mt-5 p-2">
+                            <div class="bg-light p-3 w-100 rounded-3">
+                                <h2 class="text-left bg-white p-2 text-uppercase text-danger">RESUME</h2>
+                            </div>
+                            <div class="container">
+                                <div id="Education" class="shadow-sm mt-3">
+                                    <div class="card-body">
+                                        <!-- education content -->
+                                        <div class="Education text-justify">
+                                            <h4 class="text-uppercase text-left"><i class="fa fa-graduation-cap text-info mr-3"></i>Education</h4><hr>
+                                            <!-- school -->
+                                            <div class="School">
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <div class="text-capitalize text-info bold">School Name</div>
+                                                <div>Session: 2012 - 2018</div>
+                                            </div>
+                                            <p class="text-justify ">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                            </p>
+                                            </div><!--/ school -->
+                
+                                            <!-- College -->
+                                            <div class="College">
+                                                <div class="d-flex justify-content-between mt-3">
+                                                    <div class="text-capitalize text-info bold">college Name</div>
+                                                    <div>Session: 2012 - 2018</div>
+                                                </div>
+                                                <p class="text-justify ">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                </p>
+                                            </div><!--/ College -->
+                
+                                            <!-- University -->
+                                            <div class="University">
+                                                <div class="d-flex justify-content-between mt-3">
+                                                    <div class="text-capitalize text-info bold">University Name</div>
+                                                    <div>Session: 2012 - 2018</div>
+                                                </div>
+                                                <p class="text-justify ">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                </p>
+                                            </div><!--/ University -->
+                
+                                        </div><!--/End education content -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/End resume -->
+
+                        <!-- contact -->
+                        <div id="Contact" class="Contact mt-5">
+                            <div class="bg-light p-2 my-3">
+                                <div class="h2 bold bg-light">
+                                    <h2 class="bg-white text-danger p-2">Contact</h2>
+                                </div>
+                            </div>
+                            <div class="my-3 p-4">
+                                <h5>GET IN TOUCH</h5>
+                                <p>Uommodo laboris sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="row d-flex justify-content-around">
+                                    <div class="card col-md-3 mt-3 text-center">
+                                        <i class="fa fa-envelope my-2 py-2" aria-hidden="true"></i>
+                                        <p>abc@gmail.com</p>
+                                    </div>
+                                    <div class="card col-md-3 mt-3 text-center">
+                                        <i class="fa fa-phone my-2 py-2" aria-hidden="true"></i>
+                                        <p>+00912390</p>
+                                    </div>
+                                    <div class="card col-md-3 mt-3 text-center">
+                                        <i class="fa fa-map-marker my-2 py-2" aria-hidden="true"></i>
+                                        <p>Vicotria street, 23R</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-3 p-4">
+                                <form method="post" action="#">
+                                    <div class="text-danger h6 mb-3">  
+                                      *	Please fill out the form bellow and I will reply you as soon as possible.
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-6 mt-4">
+                                            <div class="col-lg-12 mt-2">
+                                                <div class="form-group my-2 border d-flex justify-content-between"> 
+                                                    <i class="fa fa-user border-right p-3"></i>
+                                                    <input 
+                                                    type="text"
+                                                    class="form-control bg-d6 border-0 my-1"
+                                                    id="name"
+                                                    name="name"
+                                                    value=""
+                                                    placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mt-2">
+                                                <div class="form-group my-2 border d-flex justify-content-between"> 
+                                                    <i class="fa fa-envelope border-right p-3"></i>
+                                                    <input 
+                                                    type="text"
+                                                    class="form-control bg-d6 border-0 my-1"
+                                                    id="email"
+                                                    name="email"
+                                                    value=""
+                                                    placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mt-2">
+                                                <div class="form-group my-2 border d-flex justify-content-between"> 
+                                                    <i class="fa fa-link border-right p-3"></i>
+                                                    <input 
+                                                    type="text"
+                                                    class="form-control bg-d6 border-0 my-1"
+                                                    id="website"
+                                                    name="first_name"
+                                                    value=""
+                                                    placeholder="Website">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                          <div class="col-12">
+                                              <div class="form-group my-2 border-0">
+                                                 <p class="h4">Meassage</p>
+                                                  <textarea 
+                                                  class="form-control mt-3" 
+                                                  id="Textarea" 
+                                                  rows="4" 
+                                                  name="comment"
+                                                  value=""> 
+                                                  </textarea>
+                                              </div>
+                                          </div>
+                                          <div class="col-12 text-center">
+                                              <button class="btn btn-outline-danger  w-100" type="submit">Submit Form</button>
+                                          </div>
+                                        </div> 
+                                    </div>
+                                </form>
+                                <hr class="mt-5">
+                                <p class="my-3">Portfolio Website © 2022 Design by <a href="https://bd.linkedin.com/in/mannanshihab" class="text-success" target="_blank">MannanShihab.</a></p>
+                            </div>
+                        </div>
+                         <!--/End contact -->
+                    </main>
+                </div><!--/ main content -->
+            </div> 
+        </div>
+    </section>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
